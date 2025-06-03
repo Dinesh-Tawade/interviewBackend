@@ -180,7 +180,25 @@ const emplyeeDependentSchema = new mongoose.Schema({
 
 
 
+
+
+// {
+//   "_id": {
+//     "$oid": "683f034d90835290c4cc2963"
+//   },
+//   "Employee Number": 5171,
+//   "Employee Name": "Tanmaya Kumar Pattnaik",
+//   "Spouse": "Smt.Puspita Pattnaik",
+//   "Spouse Date of Birth": "20-01-1968",
+//   "Father": "Khirnod Chandra Pattnaik",
+//   "Father Date of Birth": "14-10-1934"
+// }
+
+
 const Employee = mongoose.model('Employee', employeeSchema);
 const employeeBenefits = mongoose.model('EmployeeBenefits', employeeBenefitsSchema);
 const emplyeeDependent = mongoose.model('EmplyeeDependent', emplyeeDependentSchema);
 export { Employee, employeeBenefits, emplyeeDependent };
+
+
+
